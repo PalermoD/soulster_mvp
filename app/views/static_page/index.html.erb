@@ -1,5 +1,18 @@
 <% provide(:title, "Home") %>
 
+<% if logged_in? %>
+  <div class="row">
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="post_form">
+        <%= render 'shared/post_form' %>
+      </section>
+    </aside>
+  </div>
+<% else %>
+
 <div class="center slogan">
   <h1>Welcome to Soulster</h1>
 
@@ -9,3 +22,5 @@
 
   <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
+
+<% end %>
