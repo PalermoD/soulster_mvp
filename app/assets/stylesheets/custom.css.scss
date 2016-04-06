@@ -60,6 +60,11 @@ p {
   line-height: 1.7em;
 }
 
+/*slogan*/
+
+.slogan {
+  margin-top:15%; 
+}
 
 /* header */
 
@@ -144,4 +149,12 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.corner-logo {
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+  width: 130px;
+  height: auto;
 }
