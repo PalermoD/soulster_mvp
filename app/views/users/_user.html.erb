@@ -1,4 +1,4 @@
 <li>
-  <%= gravatar_for user %>
+  <%= image_tag user.picture.url || "default.png", :class => "gravatar"%>
   <%= link_to user.name, user %>
 </li>
