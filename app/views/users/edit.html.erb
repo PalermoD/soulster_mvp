@@ -13,15 +13,13 @@
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
 
+      <%= f.label :avatar%> (square pictures work the best for profile image)
       <%= f.file_field :picture %>
 
       <%= f.submit "Save changes", class: "btn btn-primary" %>
     <% end %>
 
-    <div class="gravatar_edit">
-      <%= gravatar_for @user %>
-      <a href="http://gravatar.com/emails" target="_blank">change</a>
-    </div>
+    
 
     
   </div>
