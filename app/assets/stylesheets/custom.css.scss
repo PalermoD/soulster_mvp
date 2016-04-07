@@ -148,8 +148,10 @@ aside {
 .user_avatars {
   overflow: auto;
   margin-top: 10px;
+  
   .gravatar {
     margin: 1px 1px;
+    border-radius: 0px !important;
   }
   a {
     padding: 0;
