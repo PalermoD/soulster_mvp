@@ -12,7 +12,7 @@ delete 'logout' => 'sessions#destroy'
     end
   end
 
-resources :posts, only: [:create, :destroy]
+resources :posts
 resources :relationships,       only: [:create, :destroy]
 end
 

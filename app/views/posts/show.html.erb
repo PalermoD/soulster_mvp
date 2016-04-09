@@ -1,0 +1,16 @@
+<li id="post-<%= @post.id %>">
+  <%= image_tag @post.user.picture.url || "default.png", :class => "gravatar"%>
+  <span class="user"><%= link_to @post.user.name, @post.user %></span>
+  <span class="content">
+  	<%= @post.content %>
+    <%= image_tag @post.picture.url if @post.picture? %>
+  </span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(@post.created_at) %> ago.
+    <% if current_user?(@post.user) %>
+      <%= link_to "delete /", @post, method: :delete,
+                                       data: { confirm: "You sure?" } %>
+      <%= link_to "comments", '#' %>
+    <% end %>
+  </span>
+</li>
