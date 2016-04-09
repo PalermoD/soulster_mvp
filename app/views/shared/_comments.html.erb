@@ -1,0 +1,24 @@
+
+<% @post.comments.each do |comment| %>
+ <% if comment.user %>
+<ol class="posts">
+<li id="post-<%= comment.id %>">
+  <%= image_tag comment.user.picture.url || "default.png", :class => "gravatar"%>
+  <span class="user"><%= comment.user.name %></span>
+  <span class="content">
+    <%= comment.content %>
+   
+  </span>
+  
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(comment.created_at) %> ago.
+    <% if current_user?(comment.user) %>
+             <%= link_to "delete", [comment.post, comment], method: :delete,
+               data: { confirm: "You sure?" }, class: 'delete_post' %>
+    <% end %>
+    
+  </span>
+</li>
+</ol>
+ <% end %>
+<% end %>

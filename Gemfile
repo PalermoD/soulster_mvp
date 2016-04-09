@@ -19,6 +19,8 @@ gem "font-awesome-rails"
 gem 'shareable'
 gem 'social-share-button', '~> 0.1.8', git: 'https://github.com/cuterxy/social-share-button.git'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'acts_as_commentable_with_threading'
+gem 'awesome_nested_set'
 
 gem 'commontator'
 gem 'active_model_serializers'
