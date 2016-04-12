@@ -14,6 +14,29 @@ $gray-medium-light: #eaeaea;
 
 /* universal */
 
+.home-body {
+    
+  background: url("https://s3.amazonaws.com/soulstermvp/random/top.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #708090;
+
+} 
+
+.btn-primary {
+  background-color: black;
+  color: white !important;
+  border-color: black;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black !important;
+  border-color: black;
+}
+
 body {
   padding-top: 60px;
 }
@@ -44,6 +67,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  
 }
 
 h2 {
@@ -306,4 +330,35 @@ Comments*/
 
 .comments-show {
   margin-left: 25px;
+}
+
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.navbar-inverse {
+  background-color: rgba(34, 34, 34, 0);
+  border-color: rgba(34, 34, 34, 0); 
+}
+a {
+  color:black !important;
+}
+
+a:hover {
+  color: black !important;
+  text-decoration: none;
 }
