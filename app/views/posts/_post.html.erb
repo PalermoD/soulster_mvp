@@ -14,7 +14,7 @@
                                        data: { confirm: "You sure?" } %>
       
     <% end %>
-    <span><%= link_to post.comments.count, post %> </span>
+    <span> <%= post.comments.count %> <%= link_to "comments", post %> </span>
   </span>
 </li>
 </ol>
