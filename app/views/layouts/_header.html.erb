@@ -6,7 +6,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <% if logged_in? %>
         <%= link_to "Soulster", root_path, id: "logo" %>
+      <% else %>
+         <%= link_to "Soulster", root_path, id: "logo2" %>
+      <% end %>
     </div>
 		<nav>
     <div class="collapse navbar-collapse" id="myNavbar">

@@ -27,7 +27,7 @@ $gray-medium-light: #eaeaea;
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: #090909;
-    color: #fff !important;
+    color: white !important;
 }
 
 .btn-primary {
@@ -117,6 +117,23 @@ p {
 /* header */
 
 #logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  color: black !important;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+
+#logo2 {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
