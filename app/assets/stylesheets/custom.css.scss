@@ -16,7 +16,7 @@ $gray-medium-light: #eaeaea;
 
 .home-body {
     
-  background: url("https://s3.amazonaws.com/soulstermvp/random/style_icons_system_intro.png") no-repeat center center fixed; 
+  background: url("http://cdn1.bestpsdfreebies.com/wp-content/uploads/2013/11/5_free_seamless_icon_patterns.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -81,6 +81,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 900;
+  color: white;
   
 }
 
@@ -90,7 +91,7 @@ h1 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: white;
 }
 
 h2 {
@@ -124,6 +125,7 @@ p {
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  color: white !important;
   &:hover {
     color: white;
     text-decoration: none;
