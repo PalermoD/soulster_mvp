@@ -8,7 +8,7 @@
        <section class="stats" id="post-<%= @post.id %>">
     
     <span class="content" style="margin-top:10px;">
-     <%= @post.content %>
+     <%= raw(@post.content) %>
      <%= image_tag @post.picture.url if @post.picture? %>
    </span>
    <span class="timestamp">

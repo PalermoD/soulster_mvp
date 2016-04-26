@@ -3,7 +3,7 @@
   <%= image_tag post.user.picture.url || "default.png", :class => "gravatar"%>
   <span class="user"><%= link_to post.user.name, post.user %></span>
   <span class="content">
-  	<%= post.content %>
+  	<%= raw(post.content) %>
     <%= image_tag post.picture.url if post.picture? %>
   </span>
   
