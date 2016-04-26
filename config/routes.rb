@@ -19,6 +19,8 @@ resources :posts do
   end
 resources :relationships,       only: [:create, :destroy]
 resources :comments
+
+resources :networks
 end
 
 
