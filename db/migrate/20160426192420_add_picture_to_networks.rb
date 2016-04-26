@@ -1,4 +1,4 @@
-class AddIconToNetworks < ActiveRecord::Migration
+class AddPictureToNetworks < ActiveRecord::Migration
   def change
     add_column :networks, :picture, :string
   end
