@@ -1,7 +1,6 @@
-<% provide(:title, "Home") %>
 <% if logged_in? %>
 <div class="network-header col-md-12">
-	
+	<h3 class="network-title">Main Newsfeed</h3>
 </div>
   <div class="row">
     <aside class="col-md-4">
@@ -11,8 +10,16 @@
       <section class="stats">
         <%= render 'shared/stats' %>
       </section>
+      <section class="post_form">
+        <%= render 'shared/post_form' %>
+      </section>
+      
     </aside>
-      <%= render 'shared/networks' %>
+    <div class="col-md-8">
+
+      <h3>Post Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
   </div>
 
 <% else %>

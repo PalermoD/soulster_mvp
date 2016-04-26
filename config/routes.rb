@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
 get 'signup' => 'users#new'
 root 'static_page#index'
+get 'main' => 'static_page#main'
+
 get 'login' => 'sessions#new'
 post 'login' => 'sessions#create'
 delete 'logout' => 'sessions#destroy'
@@ -19,6 +21,8 @@ resources :posts do
   end
 resources :relationships,       only: [:create, :destroy]
 resources :comments
+
+resources :networks
 end
 
 

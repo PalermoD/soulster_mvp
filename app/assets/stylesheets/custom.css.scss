@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   
 }
@@ -78,7 +78,7 @@ h1 {
 .slogan h1 {
   font-size: 4em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: 900;
   color: white;
@@ -267,6 +267,20 @@ input {
 }
 
 
+.new-net {
+  width: 130px;
+  margin: 5px;
+}
+
+.main-net {
+  width: 130px;
+  margin: 5px;
+}
+
+.netImg {
+  text-align: center;
+}
+
 /* Users index */
 
 .users {
@@ -403,4 +417,28 @@ a {
 a:hover {
   color: black !important;
   text-decoration: none;
+}
+
+.network_header {
+
+}
+
+.net-img {
+
+  
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+
+}
+
+
+.network-description {
+  font-size: 1.3em;
+  letter-spacing: -1px;
+  margin-top: -10px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
 }
