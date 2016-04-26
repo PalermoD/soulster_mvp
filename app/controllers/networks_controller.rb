@@ -8,6 +8,10 @@ class NetworksController < ApplicationController
 		@network = Network.find(params[:id])
 	end 
 
+	def index 
+		@networks = Network.all
+	end 
+
 	def create
 	    @network = Network.new(network_params)
           if @network.save

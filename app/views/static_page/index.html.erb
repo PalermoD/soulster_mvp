@@ -12,23 +12,7 @@
         <%= render 'shared/stats' %>
       </section>
     </aside>
-    <div class="row">
-     <section class="col-md-6">
-    <div class="col-md-4 netImg">
-    <%= link_to new_network_path do %>
-       <p>Create New Network</p>
-       <%= image_tag "plus-circle.png", :class => "new-net" %>
-    <% end %>
-    </div>
-    <div class="col-md-4 netImg">
-    <%= link_to main_path do %>
-      <p>Main: Following</p>
-       <%= image_tag "logot.png", :class => "main-net" %>
-    <% end %>
-  </div>
-     </section>
-   </div>
-    
+      <%= render 'shared/networks' %>
   </div>
 
 <% else %>
