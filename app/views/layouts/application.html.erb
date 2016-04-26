@@ -6,7 +6,7 @@
 	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	<%= csrf_meta_tags %>
-	
+
 </head>
 <body>
   <%= render 'layouts/shim' %>
@@ -17,7 +17,9 @@
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
 	  <%= yield %>
-	  <%= image_tag "NEW_.png", :class => "corner-logo" %>
+	  <%= link_to root_path do %>
+	     <%= image_tag "NEW_.png", :class => "corner-logo" %>
+	  <% end %>
   </div>
   
 
