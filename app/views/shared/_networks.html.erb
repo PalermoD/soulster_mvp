@@ -12,6 +12,12 @@
        <%= image_tag "logot.png", :class => "main-net" %>
     <% end %>
   </div>
+  <% @network.each do |network| %>
+  <div class="col-md-4 netImg">
+    <p><%= link_to network.name, network %></p>
+    <%= image_tag network.picture.url, :class => "net-img" %>
+  </div>
+<% end %>
      </section>
 </div>
 
