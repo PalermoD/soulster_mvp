@@ -1,4 +1,17 @@
-<h1><%= @network.name %></h1>
+<center>
+<div class="row">
+ <div class="network_header">
+    
+    <span class="user">
+    	<h1>
+    	  <%= image_tag @network.picture.url, :class => "net-img" %>
+	      <%= @network.name %>
+	   </h1>
+    </span>
+  </div>
+  <h2 class="network-description"><%= @network.description %></h2>
+</div>
+ 
+</center>
 
-<%= @network.description %>
-<%= image_tag @network.picture.url if @network.picture? %>
+
