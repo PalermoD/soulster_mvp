@@ -14,6 +14,10 @@
     </aside>
       <%= render 'shared/networks' %>
   </div>
+  <% @network.each do |network| %>
+   <%= image_tag network.picture.url, :class => "net-img" %>
+   <%= network.name %>
+<% end %>
 
 <% else %>
 <body class="home-body">
