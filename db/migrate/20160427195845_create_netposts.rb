@@ -6,5 +6,6 @@ class CreateNetposts < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_index :netposts, [:user_id, :created_at]
   end
 end

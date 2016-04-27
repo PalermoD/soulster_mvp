@@ -1,0 +1,2 @@
+class NetpostsController < ApplicationController
+end
