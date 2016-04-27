@@ -6,6 +6,7 @@ class NetworksController < ApplicationController
 
 	def show 
 		@network = Network.find(params[:id])
+		@user = User.find(params[:id])
 	end 
 
 	def index 
