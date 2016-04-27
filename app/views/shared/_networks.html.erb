@@ -14,8 +14,10 @@
   </div>
   <% @network.each do |network| %>
   <div class="col-md-4 netImg">
-    <p><%= link_to network.name, network %></p>
+    <%= link_to network do %>
+      <p><%= network.name %></p>
     <%= image_tag network.picture.url, :class => "net-img" %>
+    <% end %>
   </div>
 <% end %>
      </section>
