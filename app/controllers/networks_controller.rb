@@ -7,6 +7,7 @@ class NetworksController < ApplicationController
 	def show 
 		@network = Network.find(params[:id])
 		@user = User.find_by(id: session[:user_id])
+		@netposts = @user.netposts.paginate(page: params[:page])
 	end 
 
 	def index 

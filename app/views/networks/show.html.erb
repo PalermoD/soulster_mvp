@@ -18,6 +18,17 @@
       <section class="stats">
         <%= render 'shared/stats' %>
       </section>
+      <section class="post_form">
+      	<%= form_for(Netpost.new, html: { multipart: true }) do |f| %>
+    
+  <div class="field">
+    <%= f.text_area :content, placeholder: "Compose new post..." %>
+  </div>
+  <%= f.submit "Netpost", class: "btn btn-primary" %>
+  
+<% end %>
+        
+      </section>
      
     </aside>
 </div>

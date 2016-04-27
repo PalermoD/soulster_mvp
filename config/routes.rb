@@ -23,6 +23,8 @@ resources :relationships,       only: [:create, :destroy]
 resources :comments
 
 resources :networks
+
+resources :netposts
 end
 
 
