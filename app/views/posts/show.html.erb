@@ -1,5 +1,5 @@
  <div class="row">
-    <aside class="col-md-4">
+    <aside class="col-md-6">
       <section class="user_info">
         <%= image_tag @post.user.picture.url || "default.png", :class => "gravatar"%>
     <span class="user"><%= link_to @post.user.name, @post.user %></span>
@@ -8,7 +8,7 @@
        <section class="stats" id="post-<%= @post.id %>">
     
     <span class="content" style="margin-top:10px;">
-     <%= raw(@post.content) %>
+     <p><%= raw(@post.content) %></p>
      <%= image_tag @post.picture.url if @post.picture? %>
    </span>
    <span class="timestamp">
@@ -24,7 +24,9 @@
         <%= render 'shared/comment_form' %>
       </section>
 </aside>
-<ol class="posts col-md-6"><%= render 'shared/comments' %></ol>
+
+<h3> Comments </h3>
+ <ol class="posts col-md-6"><%= render 'shared/comments' %></ol>
 </div>
 
 
